@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+#container{
+    width: 50px;
+    height: 50px;
+    border-radius:8px;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+    background-color: blue;
+
+}
+.popUp{
+    position: absolute;
+    top: -150%;
+    right: -150%;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px black;
+    background-color: black;
+    transition: 0.5s ease-out ;
+    z-index: 1;
+}
+
+.exit{
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    width:20px;
+    height: 20px;
+    background-color: red;
+}
+.h{
+    width: 50px;
+    height: 50px;
+    border-radius:8px;
+    box-shadow: 1px 1px 5px black;
+    opacity: 0;
+}
+.animation{
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    animation: pop .5s ease-in-out ;
+}
+@keyframes pop{
+    0%{
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    25%{
+        width: 180px;
+        height: 180px;
+        opacity: 1;
+    }
+    50%{
+        width: 200px;
+        height: 200px;
+        opacity: 1;
+    }
+    75%{
+        width: 180px;
+        height: 180px;
+        opacity: 1;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+        opacity: 1;
+    }
+}
