@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/imageuploader.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="imageUpload" accept="image/*" onchange="displayImage(this)">
+<label for="imageUpload" class="custom-file-upload">Choose an image</label>
+
+<div id="profilePictureContainer" style="display: none;">
+    <img id="profilePicture" src="#" alt="Profile Picture">
+</div>
+<script src="../script/imageuploader.js"></script>
+</body>
+</html>

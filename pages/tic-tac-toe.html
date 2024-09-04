@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/tic-tac-toe.css">
+    <script defer src="../script/tic-tac-toe.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+        <div class="container">
+          <div class="header">
+            <span class='player player-active' id='xPlayerDisplay' onclick="choosePlayer('X')">X</span>
+            <span class='titleHeader' id='titleHeader'>Choose a Player</span>
+            <span class='player' id='oPlayerDisplay' onclick="choosePlayer('O')">O</span>
+          </div>
+          <div class="cellContainer">
+            <ul class="board">
+              <li class="cell"></li>
+              <li class="cell"></li>
+              <li class="cell"></li>
+              <li class="cell"></li>
+              <li class="cell"></li>
+              <li class="cell"></li>
+              <li class="cell"></li>
+              <li class="cell"></li>
+              <li class="cell"></li>
+            </ul>
+          </div>
+          <div class="buttonContainer">
+            <button id='restartBtn'>
+              Restart
+            </button>
+          </div>
+        </div>
+</body>
+</html>
